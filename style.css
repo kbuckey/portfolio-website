@@ -1,5 +1,30 @@
-body {
-  background-color: white;
-  color: black;
-  font-family: Verdana;
+@font-face {
+    font-family: 'OpenDyslexic';
+    src :url('OpenDyslexic-Regular.otf');
+}
+
+body { 
+    background-image: linear-gradient(cornflowerblue, palegreen);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'OpenDyslexic';
+}
+img {
+    float: left;
+    border: 1px solid;
+    height: 200px;
+    filter: grayscale(100%);
+}
+
+.about {
+    background-color: lightblue;
+    border: 1px solid; 
+    text-align: center; 
+    height: 200px;
+    padding: 20px; 
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: fixed;
 }
