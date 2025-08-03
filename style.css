@@ -4,27 +4,36 @@
 }
 
 body { 
-    background-image: linear-gradient(cornflowerblue, palegreen);
+    /* background-image: linear-gradient(cornflowerblue, palegreen);
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed; */
+    background-color: oklch(95.3% 0.051 180.801);
     font-family: 'OpenDyslexic', Arial;
 }
 
 a {
     text-decoration: none;
+    color: oklch(59.6% 0.145 163.225);
 }
 
-img {
+a:visited {
+    color: oklch(27.7% 0.046 192.524);
+}
+
+a:hover {
+    color: oklch(59.6% 0.145 163.225);
+}
+
+#aboutphoto {
     border-radius: 25px;
     height: 200px;
     filter: grayscale(100%);
     }
 
 .about {
-    background-color: lightblue;
+    background-color: oklch(98.4% 0.014 180.72);
     border: 1px solid; 
     text-align: center; 
-    height: 200px;
     padding: 20px; 
     margin: 20px;
     justify-content: center;
@@ -32,12 +41,45 @@ img {
     display: flex; 
     border-radius: 25px; 
 }
+.projects {
+    background-color: oklch(98.4% 0.014 180.72);
+    border: 1px solid; 
+    text-align: center; 
+    padding: 20px; 
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px; 
+}
 
-.navbar {
-    background-color: lightblue;
+#projects-table {
+   width: 100%;
+   border: 1px solid; 
+   border-collapse: collapse;
+
+}
+
+.projects-header-row th {
+    border: 1px solid; 
+    padding: 10px;
+    background-color: oklch(95.3% 0.051 180.801);
+}
+
+.projects-data-row td {
+    border: 1px solid;
+    padding: 10px; 
+}
+
+
+#firsttetris_preview {
+    height: 200px;
+    border: 1px solid; 
+}
+
+.header {
+    background-color: oklch(98.4% 0.014 180.72);
     text-align: center; 
     margin: 20px;
-    height: 60px;  
     border: 1px solid; 
     top: 0; 
     position: sticky; 
@@ -55,7 +97,7 @@ header li {
 }
 
 .footer { 
-    background-color: lightblue;
+    background-color: oklch(98.4% 0.014 180.72);
     text-align: center; 
     z-index: 1;
     margin: 20px;
@@ -80,7 +122,6 @@ footer li {
 
 @media (max-width: 600px) {
     .about {
-        height: 70%;
         font-size: 13px;
     }
     header {
