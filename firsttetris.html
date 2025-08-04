@@ -1,14 +1,19 @@
 <!DOCTYPE html>
-    <head>
-        <meta charset="utf-8">
-        <script src="firsttetris.js" charset="utf-8"></script>
-        <link rel="stylesheet" href="firsttetrisstyle.css"></link>
-        <title>Basic Tetris</title>
-    </head>
-    <body>
+
+<head>
+    <meta charset="utf-8">
+    <script src="firsttetris.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="firsttetrisstyle.css">
+    </link>
+    <title>Basic Tetris - First Attempt</title>
+</head>
+
+<body>
+    <div class="gamebackground">
         <h3>Score:<span id="score">0</span></h3>
-        <button id="start-button">Pause/Play</button>
-        
+        <div class="button"><button id="start-button">Pause/Play</button></div>
+        </br>
+
         <div class="container">
             <div class="grid">
                 <div></div>
@@ -252,7 +257,7 @@
                 <div></div>
                 <div></div>
                 <div></div>
-                
+
                 <div></div>
                 <div></div>
                 <div></div>
@@ -264,5 +269,22 @@
                 <div></div>
             </div>
         </div>
-    </body>
+    </div>
+    <div class="description">
+        <p>My first attempt at a Javascript-based web browser game.
+            The tutorial comes from <a href="https://www.youtube.com/watch?v=rAUn1Lom6dw&t">Ania Kubow</a>.
+            I had trouble understanding the logic behind the design, and ultimately couldn't find ways 
+            to style the game without breaking it based off of the div grid. That, and some game breaking
+            glitches still exist. For example, rotating on the right side results in the shape locking in place and 
+            an overflow to the left side of the grid. Rotating at the second just before locking down on the bottom
+            results in overflow outside the grid. Some visual glitches exist while clearing a line. </p>
+        <p> The controls are simple, use left arrow key to move left, right arrow key to move right, up arrow key to roatate, 
+            and pressing the down arrow key will give a small speed boost. The rightmost smaller grid shows the upcoming piece
+            to help with planning your next move. </p>
+        <p> What I hope to achieve in the next iteration is a more aesthetically pleasing and styled game, as well as fixing the 
+            aforementioned glitches. That, and instead of simply pressing the keys, I'd like for the next iteration to have an option 
+            to be held down. </p>
+    </div>
+</body>
+
 </html>

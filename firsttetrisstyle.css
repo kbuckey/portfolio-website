@@ -1,5 +1,45 @@
+@font-face {
+    font-family: 'OpenDyslexic';
+    src :url('OpenDyslexic-Regular.otf');
+}
+
+body {
+    font-family: "OpenDyslexic";
+    background-color: oklch(95.3% 0.051 180.801);
+}
+
+a {
+    text-decoration: none;
+    color: oklch(59.6% 0.145 163.225);
+}
+
+a:visited {
+    color: oklch(27.7% 0.046 192.524);
+}
+
+a:hover {
+    color: black;
+}
+
+.gamebackground {
+    background-color: oklch(98.4% 0.014 180.72);
+    border: 1px solid; 
+    border-radius: 25px; 
+    padding-bottom: 40px; 
+}
 .container {
     display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+
+.button {
+    text-align: center; 
 }
 
 .grid {
@@ -31,4 +71,12 @@
 .mini-grid div {
     height: 20px;
     width: 20px; 
+}
+
+.description {
+    background-color: oklch(98.4% 0.014 180.72);
+    border: 1px solid; 
+    border-radius: 25px; 
+    padding: 20px; 
+    margin: 20px auto; 
 }
