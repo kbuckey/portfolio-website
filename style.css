@@ -22,6 +22,13 @@ a:hover {
     color: black;
 }
 
+h1 { font-size: 2.5rem }
+h2 { font-size: 2rem }
+h3 { font-size: 1.75rem }
+h4 { font-size: 1.5rem }
+h5 { font-size: 1.25rem }
+h6 { font-size: 1.0rem }
+
 .header {
     background-color: oklch(98.4% 0.014 180.72);
     text-align: center; 
@@ -56,7 +63,7 @@ header li {
     margin: 20px;
     justify-content: center;
     align-items: center;
-    display: flex; 
+    display: column; 
     border-radius: 25px; 
 }
 /* .projects {
