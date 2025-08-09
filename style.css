@@ -6,6 +6,7 @@
 body { 
     background-color: oklch(95.3% 0.051 180.801);
     font-family: 'OpenDyslexic', Arial;
+    font-size: 14px;
 } 
 
 a {
@@ -40,11 +41,12 @@ header ul {
 header li {
     display: inline; 
 } 
-/* #aboutphoto {
+
+#aboutphoto {
     border-radius: 25px;
     height: 200px;
     filter: grayscale(100%);
-    }
+} 
 
 .about {
     background-color: oklch(98.4% 0.014 180.72);
@@ -57,7 +59,7 @@ header li {
     display: flex; 
     border-radius: 25px; 
 }
-.projects {
+/* .projects {
     background-color: oklch(98.4% 0.014 180.72);
     border: 1px solid; 
     text-align: center; 
@@ -90,7 +92,7 @@ header li {
 #firsttetris_preview {
     height: 200px;
     border: 1px solid; 
-} */
+}  */
 
 
 
@@ -120,10 +122,15 @@ footer li {
 
 /* tablet response */ 
 @media screen and (min-width: 800px) and (max-width: 1000px) { 
-
+    body {
+        font-size: 16px; 
+    }
 }
 
 /* desktop response */
 @media screen and (min-width: 1000px) {
-    
+    body {
+        font-size: 20px;
+    }
+
 }
