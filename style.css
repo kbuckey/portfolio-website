@@ -1,22 +1,19 @@
-@font-face {
+ @font-face {
     font-family: 'OpenDyslexic';
     src :url('OpenDyslexic-Regular.otf');
 }
 
 body { 
-    /* background-image: linear-gradient(cornflowerblue, palegreen);
-    background-repeat: no-repeat;
-    background-attachment: fixed; */
     background-color: oklch(95.3% 0.051 180.801);
     font-family: 'OpenDyslexic', Arial;
-}
+} 
 
-a {
+/* a {
     text-decoration: none;
     color: oklch(59.6% 0.145 163.225);
-}
+} */
 
-a:visited {
+/* a:visited {
     color: oklch(43.2% 0.095 166.913);
 }
 
@@ -96,7 +93,7 @@ header li {
     display: inline; 
 }
 
-.footer { 
+/* .footer { 
     background-color: oklch(98.4% 0.014 180.72);
     text-align: center; 
     z-index: 1;
@@ -105,7 +102,7 @@ header li {
     position: sticky;
     bottom: 0; 
     border: 1px solid; 
-}
+} */
 
 footer ul {
     list-style-type: none;
@@ -118,17 +115,13 @@ footer li {
 
 #copyright {
     font-size: 0.875em; 
+}  
+/* tablet response */ 
+@media screen and (min-width: 800px) and (max-width: 1000px) { 
+
 }
 
-@media (max-width: 600px) {
-    .about {
-        font-size: 13px;
-    }
-    header {
-        height: 100px;
-    }
-    img {
-        height: 100px;
-    }
-
+/* desktop response */
+@media screen and (min-width: 1000px) {
+    
 }
