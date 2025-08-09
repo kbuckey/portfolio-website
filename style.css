@@ -63,7 +63,8 @@ header li {
     margin: 20px;
     justify-content: center;
     align-items: center;
-    display: column; 
+    display: flex; 
+    flex-direction: column-reverse;
     border-radius: 25px; 
 }
 /* .projects {
