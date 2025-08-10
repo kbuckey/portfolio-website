@@ -76,16 +76,13 @@ header li {
     justify-content: center;
     align-items: center;
     border-radius: 25px; 
-}
+} */
 
 #projects-table {
-   width: 100%;
-   border: 1px solid; 
-   border-collapse: collapse;
-
+   display: none;
 }
 
-.projects-header-row th {
+/* .projects-header-row th {
     border: 1px solid; 
     padding: 10px;
     background-color: oklch(95.3% 0.051 180.801);
@@ -94,13 +91,12 @@ header li {
 .projects-data-row td {
     border: 1px solid;
     padding: 10px; 
-}
+} */
 
 
 #firsttetris_preview {
-    height: 200px;
-    border: 1px solid; 
-}  */
+    display: none;
+} 
 
 
 
