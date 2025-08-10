@@ -99,7 +99,7 @@
 
 
 
- /* .footer { 
+ .footer { 
     background-color: oklch(98.4% 0.014 180.72);
     text-align: center; 
     z-index: 1;
@@ -108,9 +108,9 @@
     position: sticky;
     bottom: 0; 
     border: 1px solid; 
-} */
+}
 
- /* footer ul {
+ footer ul {
     list-style-type: none;
     padding: 0; 
 }
@@ -121,7 +121,7 @@ footer li {
 
 #copyright {
     font-size: 0.875em; 
-}   */
+}   
 
  /* tablet response */
  @media screen and (min-width: 600px) and (max-width: 1000px) {
