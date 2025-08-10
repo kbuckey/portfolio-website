@@ -1,106 +1,105 @@
  @font-face {
-    font-family: 'OpenDyslexic';
-    src :url('OpenDyslexic-Regular.otf');
-}
+     font-family: 'OpenDyslexic';
+     src: url('OpenDyslexic-Regular.otf');
+ }
 
-body { 
-    background-color: oklch(95.3% 0.051 180.801);
-    font-family: 'OpenDyslexic', Arial;
-    font-size: 14px;
-} 
+ body {
+     background-color: oklch(95.3% 0.051 180.801);
+     font-family: 'OpenDyslexic', Arial;
+     font-size: 14px;
+ }
 
-a {
-    text-decoration: none;
-    color: oklch(59.6% 0.145 163.225);
-} 
+ a {
+     text-decoration: none;
+     color: oklch(59.6% 0.145 163.225);
+ }
 
  a:visited {
-    color: oklch(43.2% 0.095 166.913);
-}
+     color: oklch(43.2% 0.095 166.913);
+ }
 
-a:hover {
-    color: black;
-}
+ a:hover {
+     color: black;
+ }
 
-h1 { font-size: 2.5rem }
-h2 { font-size: 2rem }
-h3 { font-size: 1.75rem }
-h4 { font-size: 1.5rem }
-h5 { font-size: 1.25rem }
-h6 { font-size: 1.0rem }
+ h1 {
+     font-size: 2.5rem
+ }
 
-.header {
-    background-color: oklch(98.4% 0.014 180.72);
-    text-align: center; 
-    margin: 20px;
-    border: 1px solid; 
-    top: 0; 
-    position: sticky; 
-    z-index: 1;
-    border-radius: 25px;
-}
+ h2 {
+     font-size: 2rem
+ }
 
-header ul {
-    list-style-type: none;
-    padding: 0; 
-}
+ h3 {
+     font-size: 1.75rem
+ }
 
-header li {
-    display: inline; 
-} 
+ h4 {
+     font-size: 1.5rem
+ }
 
-#aboutphoto {
-    border-radius: 25px;
-    height: 200px;
-    filter: grayscale(100%);
-} 
+ h5 {
+     font-size: 1.25rem
+ }
 
-.about {
-    background-color: oklch(98.4% 0.014 180.72);
-    border: 1px solid; 
-    text-align: center; 
-    padding: 20px; 
-    margin: 20px;
-    justify-content: center;
-    align-items: center;
-    display: flex; 
-    flex-direction: column-reverse;
-    border-radius: 25px; 
-}
-/* .projects {
-    background-color: oklch(98.4% 0.014 180.72);
-    border: 1px solid; 
-    text-align: center; 
-    padding: 20px; 
-    margin: 20px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 25px; 
-} */
+ h6 {
+     font-size: 1.0rem
+ }
 
-#projects-table {
-   display: none;
-}
+ .header {
+     background-color: oklch(98.4% 0.014 180.72);
+     text-align: center;
+     margin: 20px;
+     border: 1px solid;
+     top: 0;
+     position: sticky;
+     z-index: 1;
+     border-radius: 25px;
+ }
 
-/* .projects-header-row th {
-    border: 1px solid; 
-    padding: 10px;
-    background-color: oklch(95.3% 0.051 180.801);
-}
+ header ul {
+     list-style-type: none;
+     padding: 0;
+ }
 
-.projects-data-row td {
-    border: 1px solid;
-    padding: 10px; 
-} */
+ header li {
+     display: inline;
+ }
+
+ #aboutphoto {
+     border-radius: 25px;
+     height: 200px;
+     filter: grayscale(100%);
+ }
+
+ .about {
+     background-color: oklch(98.4% 0.014 180.72);
+     border: 1px solid;
+     text-align: center;
+     padding: 20px;
+     margin: 20px;
+     justify-content: center;
+     align-items: center;
+     display: flex;
+     flex-direction: column-reverse;
+     border-radius: 25px;
+ }
 
 
-#firsttetris_preview {
-    display: none;
-} 
+ #projects-table {
+     display: none;
+ }
 
 
 
-/* .footer { 
+
+ #firsttetris_preview {
+     display: none;
+ }
+
+
+
+ /* .footer { 
     background-color: oklch(98.4% 0.014 180.72);
     text-align: center; 
     z-index: 1;
@@ -111,7 +110,7 @@ header li {
     border: 1px solid; 
 } */
 
-/* footer ul {
+ /* footer ul {
     list-style-type: none;
     padding: 0; 
 }
@@ -124,17 +123,52 @@ footer li {
     font-size: 0.875em; 
 }   */
 
-/* tablet response */ 
-@media screen and (min-width: 800px) and (max-width: 1000px) { 
-    body {
-        font-size: 16px; 
-    }
-}
+ /* tablet response */
+ @media screen and (min-width: 600px) and (max-width: 1000px) {
+     body {
+         font-size: 16px;
+     }
+ }
 
-/* desktop response */
-@media screen and (min-width: 1000px) {
-    body {
-        font-size: 20px;
-    }
+ /* desktop response */
+ @media screen and (min-width: 1000px) {
+     body {
+         font-size: 20px;
+     }
 
-}
+     .projects {
+         background-color: oklch(98.4% 0.014 180.72);
+         border: 1px solid;
+         text-align: center;
+         padding: 20px;
+         margin: 20px;
+         justify-content: center;
+         align-items: center;
+         border-radius: 25px;
+     }
+
+     .projects-header-row th {
+         border: 1px solid;
+         padding: 10px;
+         background-color: oklch(95.3% 0.051 180.801);
+     }
+
+     .projects-data-row td {
+         border: 1px solid;
+         padding: 10px;
+     }
+
+     #projects-table {
+         display: table; 
+         width: 100%;
+         border: 1px solid;
+         border-collapse: collapse;
+     }
+
+     #firsttetris_preview { 
+        display: inline; 
+        height: 200px; 
+        border: 1px solid;
+     }
+
+ }
