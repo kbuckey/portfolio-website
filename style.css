@@ -31,7 +31,7 @@
  }
 
  h3 {
-     font-size: 1.75rem
+     font-size: 1.75rem;
  }
 
  h4 {
@@ -78,20 +78,21 @@
      text-align: center;
      padding: 20px;
      margin: 20px;
-     justify-content: center;
-     align-items: center;
-     display: flex;
-     flex-direction: column-reverse;
+     flex-direction: column;
      border-radius: 25px;
- }
 
+}
+
+#about-header { 
+    border: 1px solid;
+    border-radius: 25px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
 
  #projects-table {
      display: none;
  }
-
-
-
 
  #firsttetris_preview {
      display: none;
@@ -99,34 +100,56 @@
 
 
 
- .footer { 
-    background-color: oklch(98.4% 0.014 180.72);
-    text-align: center; 
-    z-index: 1;
-    margin: 20px;
-    border-radius: 25px;
-    position: sticky;
-    bottom: 0; 
-    border: 1px solid; 
-}
+ .footer {
+     background-color: oklch(98.4% 0.014 180.72);
+     text-align: center;
+     z-index: 1;
+     margin: 20px;
+     border-radius: 25px;
+     position: sticky;
+     bottom: 0;
+     border: 1px solid;
+ }
 
  footer ul {
-    list-style-type: none;
-    padding: 0; 
-}
+     list-style-type: none;
+     padding: 0;
+ }
 
-footer li {
-    display: inline; 
-}
+ footer li {
+     display: inline;
+ }
 
-#copyright {
-    font-size: 0.875em; 
-}   
+ #copyright {
+     font-size: 0.875em;
+ }
 
  /* tablet response */
- @media screen and (min-width: 600px) and (max-width: 1000px) {
+ @media screen and (min-width: 600px) and (max-width: 999px) {
      body {
          font-size: 16px;
+     }
+
+     .about {
+         display: grid;
+         grid-template-columns: 30% 60%; 
+         justify-content: center;
+         align-items: center;
+     }
+
+     #aboutphoto {
+         grid-row-start: 1;
+     }
+
+     #about-header {
+         width: 100%; 
+         border: 1px solid;
+         border-radius: 25px; 
+         grid-column-start: 2; 
+         margin-bottom: 0px;
+     }
+     #about-desc {
+        grid-column: span 2; 
      }
  }
 
@@ -134,6 +157,28 @@ footer li {
  @media screen and (min-width: 1000px) {
      body {
          font-size: 20px;
+     }
+
+      .about {
+         display: grid;
+         grid-template-columns: 30% 60%; 
+         justify-content: center;
+         align-items: center;
+     }
+
+     #aboutphoto {
+         grid-row-start: 1;
+     }
+
+     #about-header {
+         width: 100%; 
+         border: 1px solid;
+         border-radius: 25px; 
+         grid-column-start: 2; 
+         margin-bottom: 0px;
+     }
+     #about-desc {
+        grid-column: span 2; 
      }
 
      .projects {
@@ -159,16 +204,16 @@ footer li {
      }
 
      #projects-table {
-         display: table; 
+         display: table;
          width: 100%;
          border: 1px solid;
          border-collapse: collapse;
      }
 
-     #firsttetris_preview { 
-        display: inline; 
-        height: 200px; 
-        border: 1px solid;
+     #firsttetris_preview {
+         display: inline;
+         height: 200px;
+         border: 1px solid;
      }
 
  }
